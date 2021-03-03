@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: -100vh;
+  visibility: hidden;
+}
+
+.hidden {
+  background: rgba(85, 188, 236, 0.6);
+
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.grid {
+  background-image: url("https://raw.githubusercontent.com/john-smilga/javascript-basic-projects/master/6-modal/final/hero.jpeg");
+  background: center center cover;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.center2 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  height: 240px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 30% 50% 10%;
+  grid-template-rows: 30% 50% 20% 10%;
+}
+
+.center2 h1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  color: #102a42;
+  font-size: 1.9em;
+}
+
+.center {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  height: 240px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 15% 50% 20% 10%;
+}
+
+.center div {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.center h1 {
+  color: #102a42;
+  font-size: 3.7em;
+  padding: 20px;
+}
+
+.center button {
+  padding: 10px;
+  margin-top: -120px;
+  background-color: #49a6e9;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  transition: 0.3s ease-out;
+}
+
+button:hover {
+  background-color: white;
+  color: #49a6e9;
+  border: 2px solid #49a6e9;
+  border-radius: 3px;
+}
+
+i {
+  font-size: 2em;
+}
+
+i:hover {
+  color: red;
+  transform: scale(10px, 10px);
+}
+
+@media (max-width: 680px) {
+  .grid {
+    grid-template-columns: 10% 80% 10%;
+  }
+
+  .center {
+    height: 290px;
+    grid-template-rows: 15% 80% 5% 0%;
+  }
+  /* .center2 {
+    grid-template-columns: 5% 85% 10%;
+    grid-template-rows: 5% 85% 10%;
+    width: 250px;
+  }
+
+  .center2 h1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: #102a42;
+    font-size: 1.9em;
+  } */
+
+  .hidden {
+    grid-template-columns: 15% 70% 10%;
+  }
+}
